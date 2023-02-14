@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page | Startup Grind Tech Conference</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/index.js" type="module"></script>
   </head>
@@ -18,7 +29,7 @@
         >
           <div class="badge-logo">2021</div>
           <img
-            src="https://cdn.locomotive.works/sites/5c2dda852468680024e301d4/theme/images/startup-grind.png?1675113744"
+            src="images/startup-grind.png"
           />
         </a>
 
@@ -31,10 +42,7 @@
           <span class="icon-hamburger"></span>
         </button>
 
-        <nav
-          class="s-header__nav"
-          data-menu-target="content"
-        >
+        <nav class="s-header__nav" data-menu-target="content">
           <a id="chp-1" href="/#speakers">Speakers</a>
           <a id="chp-2" href="/#partners">Partners</a>
           <a id="chp-3" href="/faq.html">FAQ</a>
@@ -107,17 +115,15 @@
               </p>
               <img
                 class="s-info__video-icon initial loaded"
-                data-src="https://cdn.locomotive.works/sites/5c2dda852468680024e301d4/theme/images/top-video-play.png?1675113744"
                 height="100"
                 width="100"
-                src="https://cdn.locomotive.works/sites/5c2dda852468680024e301d4/theme/images/top-video-play.png?1675113744"
+                src="images/top_vide_play.png"
               />
               <div class="s-info__image">
                 <img
-                  data-src="https://cdn.locomotive.works/sites/5c2dda852468680024e301d4/pages/5c2dda852468680024e301d6/files/top-video.jpg?1604600240"
                   alt="frame video"
                   class="initial loaded"
-                  src="https://cdn.locomotive.works/sites/5c2dda852468680024e301d4/pages/5c2dda852468680024e301d6/files/top-video.jpg?1604600240"
+                  src="images/top_video.jpeg"
                   data-was-processed="true"
                 />
               </div>
@@ -148,294 +154,12 @@
             </div>
           </button>
 
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="1"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Malin Holmberg</div>
-              <div class="s-speakers__position">Partner</div>
-              <div class="s-speakers__company">Target Global</div>
-            </div>
-            <div class="s-speakers__image">
-              <img
-                src="images/speakers/malinholmberg.jpeg"
-                alt="Malin Holmberg"
-              />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="2"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Miguel Andrés</div>
-              <div class="s-speakers__position">CTO</div>
-              <div class="s-speakers__company">Badi</div>
-            </div>
-            <div class="s-speakers__image">
-              <img
-                src="images/speakers/miguelandres.jpeg"
-                alt="Miguel Andrés"
-              />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="3"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Lina Chong</div>
-              <div class="s-speakers__position">Investment Director</div>
-              <div class="s-speakers__company">Target Global</div>
-            </div>
-            <div class="s-speakers__image">
-              <img src="images/speakers/linachong.png" alt="Lina Chong" />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="4"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Martin Davis</div>
-              <div class="s-speakers__position">CEO</div>
-              <div class="s-speakers__company">Draper Esprit</div>
-            </div>
-            <div class="s-speakers__image">
-              <img src="images/speakers/martindavis.jpeg" alt="Martin Davis" />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="5"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Daniela Goicoechea</div>
-              <div class="s-speakers__position">CMO &amp; Founder</div>
-              <div class="s-speakers__company">Goiko Grill</div>
-            </div>
-            <div class="s-speakers__image">
-              <img
-                src="images/speakers/danielagoicoechea.jpeg"
-                alt="Daniela Goicoechea"
-              />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="6"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Caroline Chayot</div>
-              <div class="s-speakers__position">Partner</div>
-              <div class="s-speakers__company">Atomico</div>
-            </div>
-            <div class="s-speakers__image">
-              <img
-                src="images/speakers/carolinechayot.jpeg"
-                alt="Caroline Chayot"
-              />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="7"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Dorion Carroll</div>
-              <div class="s-speakers__position">
-                VP of Customer Engagement Technologies
-              </div>
-              <div class="s-speakers__company">Amazon</div>
-            </div>
-            <div class="s-speakers__image">
-              <img
-                src="images/speakers/dorioncarroll.jpeg"
-                alt="Dorion Carroll"
-              />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="8"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Chad West</div>
-              <div class="s-speakers__position">CMO</div>
-              <div class="s-speakers__company">Revolut</div>
-            </div>
-            <div class="s-speakers__image">
-              <img src="images/speakers/chadwest.jpeg" alt="Chad West" />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="9"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Liz Dunn</div>
-              <div class="s-speakers__position">CEO</div>
-              <div class="s-speakers__company">LCDC</div>
-            </div>
-            <div class="s-speakers__image">
-              <img src="images/speakers/lizdunn.jpeg" alt="Liz Dunn" />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="10"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Samuel Fuentes</div>
-              <div class="s-speakers__position">CTO &amp; Co-founder</div>
-              <div class="s-speakers__company">OnTruck</div>
-            </div>
-            <div class="s-speakers__image">
-              <img
-                src="images/speakers/samuelfuentes.jpeg"
-                alt="Samuel Fuentes"
-              />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="11"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Jorge Gómez Sancha</div>
-              <div class="s-speakers__position">Co-founder</div>
-              <div class="s-speakers__company">TinyBird</div>
-            </div>
-            <div class="s-speakers__image">
-              <img
-                src="images/speakers/jorgegomezsancha.jpeg"
-                alt="Jorge Gómez Sancha"
-              />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="12"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Georgie Smallwood</div>
-              <div class="s-speakers__position">CPO</div>
-              <div class="s-speakers__company">N26</div>
-            </div>
-            <div class="s-speakers__image">
-              <img
-                src="images/speakers/georgiesmallwood.jpeg"
-                alt="Georgie Smallwood"
-              />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="13"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Adam Lasri</div>
-              <div class="s-speakers__position">Senior Associate</div>
-              <div class="s-speakers__company">Atomico</div>
-            </div>
-            <div class="s-speakers__image">
-              <img src="images/speakers/adamlasri.jpeg" alt="Adam Lasri" />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="14"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Josh Feldberg</div>
-              <div class="s-speakers__position">CEO</div>
-              <div class="s-speakers__company">Feldberg Associates</div>
-            </div>
-            <div class="s-speakers__image">
-              <img
-                src="images/speakers/joshfeldberg.jpeg"
-                alt="Josh Feldberg"
-              />
-            </div>
-          </button>
-
-          <button
-            class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
-            data-slide="15"
-          >
-            <div class="s-speakers__caption">
-              <div class="s-speakers__name">Ander Michelena</div>
-              <div class="s-speakers__position">Partner</div>
-              <div class="s-speakers__company">All Iron Ventures</div>
-            </div>
-            <div class="s-speakers__image">
-              <img
-                src="images/speakers/andermichelena.jpeg"
-                alt="Ander Michelena"
-              />
-            </div>
-          </button>
-        </div>
-      </section>
-
-      <section class="modal modal-speakers fade" tabindex="-1">
-        <div class="modal modal-speakers fade" id="derekAnderenModal">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <button type="button" class="close" data-dismiss="modal">×</button>
-
-            </div>
-          </div>
-        </div>
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal">×</button>
-            <div class="modal-speakers__slick">
-              <div class="modal-speakers__slide">
+          <div class="modal modal-speakers fade" id="derekAndersenModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -451,18 +175,17 @@
                     <div class="modal-speakers__hr"></div>
                     <div class="modal-speakers__description">
                       <p>
-                        Derek Andersen is the founder and CEO of Startup Grind,
-                        a community of over 500 Chapters in 135 countries
-                        designed to educate, inspire, and connect entrepreneurs.
-                        Startup Grind's values of giving, helping others, and
-                        making friends have spread across the world. Since 2012
-                        Startup Grind has hosted thousands of events for more
-                        than 2,000,000 entrepreneurs. In 2009 Derek founded
-                        Vaporware Labs, incubating many products including
-                        Startup Grind and professional social network Commonred,
-                        which was acquired by Income.com in 2012. Now, he's spun
-                        off a separate company to manage online communities
-                        called Bevy.<br />
+                        Derek Andersen is the founder and CEO of Startup Grind, a
+                        community of over 500 Chapters in 135 countries designed
+                        to educate, inspire, and connect entrepreneurs. Startup
+                        Grind's values of giving, helping others, and making
+                        friends have spread across the world. Since 2012 Startup
+                        Grind has hosted thousands of events for more than
+                        2,000,000 entrepreneurs. In 2009 Derek founded Vaporware
+                        Labs, incubating many products including Startup Grind and
+                        professional social network Commonred, which was acquired
+                        by Income.com in 2012. Now, he's spun off a separate
+                        company to manage online communities called Bevy.<br />
                       </p>
                     </div>
 
@@ -476,8 +199,34 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#malinHolmbergModal"
+            data-slide="1"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Malin Holmberg</div>
+              <div class="s-speakers__position">Partner</div>
+              <div class="s-speakers__company">Target Global</div>
+            </div>
+            <div class="s-speakers__image">
+              <img
+                src="images/speakers/malinholmberg.jpeg"
+                alt="Malin Holmberg"
+              />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="malinHolmbergModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -527,8 +276,34 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#miguelAndresModal"
+            data-slide="2"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Miguel Andrés</div>
+              <div class="s-speakers__position">CTO</div>
+              <div class="s-speakers__company">Badi</div>
+            </div>
+            <div class="s-speakers__image">
+              <img
+                src="images/speakers/miguelandres.jpeg"
+                alt="Miguel Andrés"
+              />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="miguelAndresModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -614,8 +389,31 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#linaChongModal"
+            data-slide="3"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Lina Chong</div>
+              <div class="s-speakers__position">Investment Director</div>
+              <div class="s-speakers__company">Target Global</div>
+            </div>
+            <div class="s-speakers__image">
+              <img src="images/speakers/linachong.png" alt="Lina Chong" />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="linaChongModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img src="images/speakers/linachong.png" alt="Lina Chong" />
@@ -656,8 +454,31 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#martinDavisModal"
+            data-slide="4"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Martin Davis</div>
+              <div class="s-speakers__position">CEO</div>
+              <div class="s-speakers__company">Draper Esprit</div>
+            </div>
+            <div class="s-speakers__image">
+              <img src="images/speakers/martindavis.jpeg" alt="Martin Davis" />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="martinDavisModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -677,8 +498,34 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#danielaGoicoecheaModal"
+            data-slide="5"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Daniela Goicoechea</div>
+              <div class="s-speakers__position">CMO &amp; Founder</div>
+              <div class="s-speakers__company">Goiko Grill</div>
+            </div>
+            <div class="s-speakers__image">
+              <img
+                src="images/speakers/danielagoicoechea.jpeg"
+                alt="Daniela Goicoechea"
+              />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="danielaGoicoecheaModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -728,8 +575,34 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#carolineChayotModal"
+            data-slide="6"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Caroline Chayot</div>
+              <div class="s-speakers__position">Partner</div>
+              <div class="s-speakers__company">Atomico</div>
+            </div>
+            <div class="s-speakers__image">
+              <img
+                src="images/speakers/carolinechayot.jpeg"
+                alt="Caroline Chayot"
+              />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="carolineChayotModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -765,8 +638,36 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#dorionCarrollModal"
+            data-slide="7"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Dorion Carroll</div>
+              <div class="s-speakers__position">
+                VP of Customer Engagement Technologies
+              </div>
+              <div class="s-speakers__company">Amazon</div>
+            </div>
+            <div class="s-speakers__image">
+              <img
+                src="images/speakers/dorioncarroll.jpeg"
+                alt="Dorion Carroll"
+              />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="dorionCarrollModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -819,8 +720,31 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#chadWestModal"
+            data-slide="8"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Chad West</div>
+              <div class="s-speakers__position">CMO</div>
+              <div class="s-speakers__company">Revolut</div>
+            </div>
+            <div class="s-speakers__image">
+              <img src="images/speakers/chadwest.jpeg" alt="Chad West" />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="chadWestModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img src="images/speakers/chadwest.jpeg" alt="Chad West" />
@@ -854,8 +778,31 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#lizDunnModal"
+            data-slide="9"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Liz Dunn</div>
+              <div class="s-speakers__position">CEO</div>
+              <div class="s-speakers__company">LCDC</div>
+            </div>
+            <div class="s-speakers__image">
+              <img src="images/speakers/lizdunn.jpeg" alt="Liz Dunn" />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="lizDunnModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img src="images/speakers/lizdunn.jpeg" alt="Liz Dunn" />
@@ -910,8 +857,34 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#samuelFuentesModal"
+            data-slide="10"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Samuel Fuentes</div>
+              <div class="s-speakers__position">CTO &amp; Co-founder</div>
+              <div class="s-speakers__company">OnTruck</div>
+            </div>
+            <div class="s-speakers__image">
+              <img
+                src="images/speakers/samuelfuentes.jpeg"
+                alt="Samuel Fuentes"
+              />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="samuelFuentesModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -960,8 +933,34 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#jorgeGomezSanchaModal"
+            data-slide="11"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Jorge Gómez Sancha</div>
+              <div class="s-speakers__position">Co-founder</div>
+              <div class="s-speakers__company">TinyBird</div>
+            </div>
+            <div class="s-speakers__image">
+              <img
+                src="images/speakers/jorgegomezsancha.jpeg"
+                alt="Jorge Gómez Sancha"
+              />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="jorgeGomezSanchaModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -1011,8 +1010,34 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#georgieSmallwoodModal"
+            data-slide="12"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Georgie Smallwood</div>
+              <div class="s-speakers__position">CPO</div>
+              <div class="s-speakers__company">N26</div>
+            </div>
+            <div class="s-speakers__image">
+              <img
+                src="images/speakers/georgiesmallwood.jpeg"
+                alt="Georgie Smallwood"
+              />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="georgieSmallwoodModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -1049,8 +1074,31 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#adamLasriModal"
+            data-slide="13"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Adam Lasri</div>
+              <div class="s-speakers__position">Senior Associate</div>
+              <div class="s-speakers__company">Atomico</div>
+            </div>
+            <div class="s-speakers__image">
+              <img src="images/speakers/adamlasri.jpeg" alt="Adam Lasri" />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="adamLasriModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -1088,8 +1136,34 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#joshFeldbergModal"
+            data-slide="14"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Josh Feldberg</div>
+              <div class="s-speakers__position">CEO</div>
+              <div class="s-speakers__company">Feldberg Associates</div>
+            </div>
+            <div class="s-speakers__image">
+              <img
+                src="images/speakers/joshfeldberg.jpeg"
+                alt="Josh Feldberg"
+              />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="joshFeldbergModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
@@ -1130,8 +1204,34 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="modal-speakers__slide">
+          <button
+            class="s-speakers__item"
+            data-bs-toggle="modal"
+            data-bs-target="#anderMichelenaModal"
+            data-slide="15"
+          >
+            <div class="s-speakers__caption">
+              <div class="s-speakers__name">Ander Michelena</div>
+              <div class="s-speakers__position">Partner</div>
+              <div class="s-speakers__company">All Iron Ventures</div>
+            </div>
+            <div class="s-speakers__image">
+              <img
+                src="images/speakers/andermichelena.jpeg"
+                alt="Ander Michelena"
+              />
+            </div>
+          </button>
+
+          <div class="modal modal-speakers fade" id="anderMichelenaModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
                     <img
