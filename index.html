@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page | Startup Grind Tech Conference</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js" type="module"></script>
   </head>
-  <body>
-    <header class="s-header">
+  <body class="">
+    <header class="s-header" data-controller="menu">
       <div class="s-header__main">
         <a
           class="s-header__logo"
@@ -23,13 +24,17 @@
 
         <button
           class="s-header__hamburger"
-          data-menu-open=""
           aria-label="Toggle navigation"
+          data-menu-target="button"
+          data-action="menu#toggle"
         >
           <span class="icon-hamburger"></span>
         </button>
 
-        <nav class="s-header__nav">
+        <nav
+          class="s-header__nav"
+          data-menu-target="content"
+        >
           <a id="chp-1" href="/#speakers">Speakers</a>
           <a id="chp-2" href="/#partners">Partners</a>
           <a id="chp-3" href="/faq.html">FAQ</a>
@@ -52,7 +57,7 @@
       </nav>
     </header>
     <main>
-      <section class="s-hero on-screen" data-onscreen="" id="hero">
+      <section class="s-hero on-screen" id="hero">
         <div class="s-hero__container">
           <h1>Important announcement</h1>
           <h2>Our 2021 Conference has been cancelled</h2>
@@ -65,10 +70,7 @@
         </div>
         <div
           class="s-hero__image initial"
-          data-bg="url(https://cdn.locomotive.works/sites/5c2dda852468680024e301d4/pages/5c2dda852468680024e301d6/files/hero-SG141118096.jpg?1604600240)"
-          style="
-            background-image: url('https://cdn.locomotive.works/sites/5c2dda852468680024e301d4/pages/5c2dda852468680024e301d6/files/hero-SG141118096.jpg?1604600240');
-          "
+          style="background-image: url('images/hero.jpeg')"
         ></div>
       </section>
 
@@ -129,8 +131,8 @@
           <h2 class="h1 underline-heading">Speakers</h2>
           <button
             class="s-speakers__item"
-            data-toggle="modal"
-            data-target=".modal-speakers"
+            data-bs-toggle="modal"
+            data-bs-target="#derekAndersenModal"
             data-slide="0"
           >
             <div class="s-speakers__caption">
@@ -196,10 +198,7 @@
               <div class="s-speakers__company">Target Global</div>
             </div>
             <div class="s-speakers__image">
-              <img
-                src="images/speakers/linachong.png"
-                alt="Lina Chong"
-              />
+              <img src="images/speakers/linachong.png" alt="Lina Chong" />
             </div>
           </button>
 
@@ -215,10 +214,7 @@
               <div class="s-speakers__company">Draper Esprit</div>
             </div>
             <div class="s-speakers__image">
-              <img
-                src="images/speakers/martindavis.jpeg"
-                alt="Martin Davis"
-              />
+              <img src="images/speakers/martindavis.jpeg" alt="Martin Davis" />
             </div>
           </button>
 
@@ -293,10 +289,7 @@
               <div class="s-speakers__company">Revolut</div>
             </div>
             <div class="s-speakers__image">
-              <img
-                src="images/speakers/chadwest.jpeg"
-                alt="Chad West"
-              />
+              <img src="images/speakers/chadwest.jpeg" alt="Chad West" />
             </div>
           </button>
 
@@ -312,10 +305,7 @@
               <div class="s-speakers__company">LCDC</div>
             </div>
             <div class="s-speakers__image">
-              <img
-                src="images/speakers/lizdunn.jpeg"
-                alt="Liz Dunn"
-              />
+              <img src="images/speakers/lizdunn.jpeg" alt="Liz Dunn" />
             </div>
           </button>
 
@@ -388,10 +378,7 @@
               <div class="s-speakers__company">Atomico</div>
             </div>
             <div class="s-speakers__image">
-              <img
-                src="images/speakers/adamlasri.jpeg"
-                alt="Adam Lasri"
-              />
+              <img src="images/speakers/adamlasri.jpeg" alt="Adam Lasri" />
             </div>
           </button>
 
@@ -436,6 +423,14 @@
       </section>
 
       <section class="modal modal-speakers fade" tabindex="-1">
+        <div class="modal modal-speakers fade" id="derekAnderenModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+
+            </div>
+          </div>
+        </div>
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal">×</button>
@@ -623,10 +618,7 @@
               <div class="modal-speakers__slide">
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
-                    <img
-                      src="images/speakers/linachong.png"
-                      alt="Lina Chong"
-                    />
+                    <img src="images/speakers/linachong.png" alt="Lina Chong" />
                   </div>
                   <div class="modal-speakers__content">
                     <div class="modal-speakers__name">Lina Chong</div>
@@ -831,10 +823,7 @@
               <div class="modal-speakers__slide">
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
-                    <img
-                      src="images/speakers/chadwest.jpeg"
-                      alt="Chad West"
-                    />
+                    <img src="images/speakers/chadwest.jpeg" alt="Chad West" />
                   </div>
                   <div class="modal-speakers__content">
                     <div class="modal-speakers__name">Chad West</div>
@@ -869,10 +858,7 @@
               <div class="modal-speakers__slide">
                 <div class="modal-speakers__item">
                   <div class="modal-speakers__image">
-                    <img
-                      src="images/speakers/lizdunn.jpeg"
-                      alt="Liz Dunn"
-                    />
+                    <img src="images/speakers/lizdunn.jpeg" alt="Liz Dunn" />
                   </div>
                   <div class="modal-speakers__content">
                     <div class="modal-speakers__name">Liz Dunn</div>
@@ -1552,13 +1538,15 @@
               href="http://www.accio.gencat.cat/ca/inici"
               target="_blank"
               title="partner ACCIÓ"
-              style="background-image: url(images/sponsors/sponsor-accio.jpeg);"
+              style="background-image: url(images/sponsors/sponsor-accio.jpeg)"
             ></a>
             <a
               href="http://catempren.gencat.cat/ca/inici"
               target="_blank"
               title="partner Catalunya Emprèn"
-              style="background-image: url(images/sponsors/sponsor-catalunyaempren.gif);"
+              style="
+                background-image: url(images/sponsors/sponsor-catalunyaempren.gif);
+              "
             ></a>
           </div>
 
@@ -1567,19 +1555,23 @@
               href="http://barcelonactiva.cat"
               target="_blank"
               title="partner Barcelona Activa"
-              style="background-image: url(images/sponsors/sponsor_barcelona_activa.png);"
+              style="
+                background-image: url(images/sponsors/sponsor_barcelona_activa.png);
+              "
             ></a>
             <a
               href="https://aws.amazon.com/activate/"
               target="_blank"
               title="partner AWS Activate"
-              style="background-image: url(images/sponsors/sponsor_aws.png);"
+              style="background-image: url(images/sponsors/sponsor_aws.png)"
             ></a>
             <a
               href="https://barcelonadigitaltalent.com/"
               target="_blank"
               title="partner Barcelona Digital Talent"
-              style="background-image: url(images/sponsors/sponsor_barcelona_digital_talent.png);"
+              style="
+                background-image: url(images/sponsors/sponsor_barcelona_digital_talent.png);
+              "
             ></a>
           </div>
 
@@ -1588,7 +1580,9 @@
               href="https://www.validatedid.com/?utm_source=Startup%20Grind&amp;utm_medium&amp;utm_term&amp;utm_content&amp;utm_campaign"
               target="_blank"
               title="partner ValidatedID"
-              style="background-image: url(images/sponsors/sponsor_validated_id.png);"
+              style="
+                background-image: url(images/sponsors/sponsor_validated_id.png);
+              "
             ></a>
           </div>
 
@@ -1597,13 +1591,15 @@
               href="https://estrelladamm.com"
               target="_blank"
               title="partner Estrella Damm"
-              style="background-image: url(images/sponsors/sponsor_estrelladamm.jpeg);"
+              style="
+                background-image: url(images/sponsors/sponsor_estrelladamm.jpeg);
+              "
             ></a>
             <a
               href="https://anais.name"
               target="_blank"
               title="partner Las Muns"
-              style="background-image: url(images/sponsors/sponsor_muns.png);"
+              style="background-image: url(images/sponsors/sponsor_muns.png)"
             ></a>
           </div>
 
@@ -1622,7 +1618,7 @@
               href="https://marsbased.com/"
               target="_blank"
               title="marsbased - Experts in web &amp; mobile development using Ruby on Rails, Node.js, React and Angular"
-              style="background-image: url(images/marsbased.svg);"
+              style="background-image: url(images/marsbased.svg)"
             ></a>
           </div>
         </div>
@@ -1637,217 +1633,263 @@
               href="http://www.startupdigest.com"
               target="_blank"
               title="partner Startup Digest"
-              style="background-image: url(images/media_partners/media-digest.png);"
+              style="
+                background-image: url(images/media_partners/media-digest.png);
+              "
             ></a>
 
             <a
               href="http://www.elespañol.com"
               target="_blank"
               title="partner El Español"
-              style="background-image: url(images/media_partners/media-espanol.png);"
+              style="
+                background-image: url(images/media_partners/media-espanol.png);
+              "
             ></a>
 
             <a
               href="https://www.ub.edu"
               target="_blank"
               title="partner UB"
-              style="background-image: url(images/media_partners/media-ub.png);"
+              style="background-image: url(images/media_partners/media-ub.png)"
             ></a>
 
             <a
               href="http://www.upc.edu"
               target="_blank"
               title="partner UPC"
-              style="background-image: url(images/media_partners/media_upc.png);"
+              style="background-image: url(images/media_partners/media_upc.png)"
             ></a>
 
             <a
               href="http://www.upf.edu"
               target="_blank"
               title="partner UPF"
-              style="background-image: url(images/media_partners/media_upf.png);"
+              style="background-image: url(images/media_partners/media_upf.png)"
             ></a>
 
             <a
               href="http://www.miniguide.co"
               target="_blank"
               title="partner Miniguide"
-              style="background-image: url(images/media_partners/media-miniguide.png);"
+              style="
+                background-image: url(images/media_partners/media-miniguide.png);
+              "
             ></a>
 
             <a
               href="https://wwwhatsnew.com/"
               target="_blank"
               title="partner Wwwhat's new"
-              style="background-image: url(images/media_partners/media-whats2.png);"
+              style="
+                background-image: url(images/media_partners/media-whats2.png);
+              "
             ></a>
 
             <a
               href="https://www.iebschool.com/"
               target="_blank"
               title="partner IEBS"
-              style="background-image: url(images/media_partners/media-iebs.png);"
+              style="
+                background-image: url(images/media_partners/media-iebs.png);
+              "
             ></a>
 
             <a
               href="http://www.novobrief.com"
               target="_blank"
               title="partner Novobrief"
-              style="background-image: url(images/media_partners/media-novobrief.png);"
+              style="
+                background-image: url(images/media_partners/media-novobrief.png);
+              "
             ></a>
 
             <a
               href="http://difitek.com"
               target="_blank"
               title="partner Difitek"
-              style="background-image: url(images/media_partners/media-difitek.png);"
+              style="
+                background-image: url(images/media_partners/media-difitek.png);
+              "
             ></a>
 
             <a
               href="https://hubbublabs.com"
               target="_blank"
               title="partner Hubbub Labs"
-              style="background-image: url(images/media_partners/media-hubbub.png);"
+              style="
+                background-image: url(images/media_partners/media-hubbub.png);
+              "
             ></a>
 
             <a
               href="https://eu-startups.com"
               target="_blank"
               title="partner EU Startups"
-              style="background-image: url(images/media_partners/media_eustartups.png);"
+              style="
+                background-image: url(images/media_partners/media_eustartups.png);
+              "
             ></a>
 
             <a
               href="http://betahaus.es"
               target="_blank"
               title="partner Betahaus"
-              style="background-image: url(images/media_partners/media-betahaus.png);"
+              style="
+                background-image: url(images/media_partners/media-betahaus.png);
+              "
             ></a>
 
             <a
               href="https://www.mob-bcn.com"
               target="_blank"
               title="partner MOB"
-              style="background-image: url(images/media_partners/media-mob.png);"
+              style="background-image: url(images/media_partners/media-mob.png)"
             ></a>
 
             <a
               href="https://www.barcelona-metropolitan.com/"
               target="_blank"
               title="partner Metropolitan"
-              style="background-image: url(images/media_partners/media-metropolitan.jpg);"
+              style="
+                background-image: url(images/media_partners/media-metropolitan.jpg);
+              "
             ></a>
 
             <a
               href="https://onecowork.com"
               target="_blank"
               title="partner One Co Work"
-              style="background-image: url(images/media_partners/media-one.png);"
+              style="background-image: url(images/media_partners/media-one.png)"
             ></a>
 
             <a
               href="https://marketing4ecommerce.net/"
               target="_blank"
               title="partner mkt4commerce"
-              style="background-image: url(images/media_partners/media_m4c.png);"
+              style="background-image: url(images/media_partners/media_m4c.png)"
             ></a>
 
             <a
               href="http://www.worldcoo.com"
               target="_blank"
               title="partner Worldcoo"
-              style="background-image: url(images/media_partners/media-worldcoo.png);"
+              style="
+                background-image: url(images/media_partners/media-worldcoo.png);
+              "
             ></a>
 
             <a
               href="http://akuaro.com"
               target="_blank"
               title="partner Akuaro"
-              style="background-image: url(images/media_partners/media_akuaro.png);"
+              style="
+                background-image: url(images/media_partners/media_akuaro.png);
+              "
             ></a>
 
             <a
               href="https://akuaroworld.com"
               target="_blank"
               title="partner Akuaroworld"
-              style="background-image: url(images/media_partners/media_akuaro.png);"
+              style="
+                background-image: url(images/media_partners/media_akuaro.png);
+              "
             ></a>
 
             <a
               href="https://www.travelconceptsolution.com/"
               target="_blank"
               title="partner TCS"
-              style="background-image: url(images/media_partners/media-tcs.png);"
+              style="background-image: url(images/media_partners/media-tcs.png)"
             ></a>
 
             <a
               href="https://barcelonastartupnews.com/"
               target="_blank"
               title="partner BCN Startup news"
-              style="background-image: url(images/media_partners/media_bsn.png);"
+              style="background-image: url(images/media_partners/media_bsn.png)"
             ></a>
 
             <a
               href="https://www.todostartups.com/"
               target="_blank"
               title="partner TodoStartups"
-              style="background-image: url(images/media_partners/media_todostartups.jpg);"
+              style="
+                background-image: url(images/media_partners/media_todostartups.jpg);
+              "
             ></a>
 
             <a
               href="https://codely.tech"
               target="_blank"
               title="partner Codely"
-              style="background-image: url(images/media_partners/media_codely.jpg);"
+              style="
+                background-image: url(images/media_partners/media_codely.jpg);
+              "
             ></a>
 
             <a
               href="http://www.ctecno.cat/"
               target="_blank"
               title="partner CTecno"
-              style="background-image: url(images/media_partners/media_ctecno.jpg);"
+              style="
+                background-image: url(images/media_partners/media_ctecno.jpg);
+              "
             ></a>
 
             <a
               href="https://www.oneragtime.com/"
               target="_blank"
               title="partner OneRagTime"
-              style="background-image: url(images/media_partners/media_oneragtime.png);"
+              style="
+                background-image: url(images/media_partners/media_oneragtime.png);
+              "
             ></a>
 
             <a
               href="https://city.ai/"
               target="_blank"
               title="partner BCN CITY AI"
-              style="background-image: url(images/media_partners/media_bcncityai.png);"
+              style="
+                background-image: url(images/media_partners/media_bcncityai.png);
+              "
             ></a>
 
             <a
               href="https://www.studentfy.com/"
               target="_blank"
               title="partner Studentfy"
-              style="background-image: url(images/media_partners/media_studentfy.jpg);"
+              style="
+                background-image: url(images/media_partners/media_studentfy.jpg);
+              "
             ></a>
 
             <a
               href="https://hackcolab.tech"
               target="_blank"
               title="partner Hackcolab"
-              style="background-image: url(images/media_partners/media_hackcolabnew.png);"
+              style="
+                background-image: url(images/media_partners/media_hackcolabnew.png);
+              "
             ></a>
 
             <a
               href="http://www.malt.es"
               target="_blank"
               title="partner Malt"
-              style="background-image: url(images/media_partners/media_malt.png);"
+              style="
+                background-image: url(images/media_partners/media_malt.png);
+              "
             ></a>
 
             <a
               href="http://www.kairossummit.eu/"
               target="_blank"
               title="partner Kairos Society"
-              style="background-image: url(images/media_partners/media_kairos.png);"
+              style="
+                background-image: url(images/media_partners/media_kairos.png);
+              "
             ></a>
           </div>
         </div>
@@ -1872,10 +1914,7 @@
                 target="_blank"
               >
                 <div class="info-block__image">
-                  <img
-                    src="images/agenda.jpeg"
-                    title="view agenda"
-                  />
+                  <img src="images/agenda.jpeg" title="view agenda" />
                 </div>
               </a>
             </div>
@@ -1894,10 +1933,7 @@
                   target="_blank"
                 >
                   <div class="info-block__image icon-video-centered">
-                    <img
-                      src="images/past_talks_1.png"
-                      title="view agenda"
-                    />
+                    <img src="images/past_talks_1.png" title="view agenda" />
                   </div>
                   <div class="info-block__caption">
                     <h2>2018 Conference Highlights</h2>
@@ -1911,10 +1947,7 @@
                   target="_blank"
                 >
                   <div class="info-block__image icon-video-centered">
-                    <img
-                      src="images/past_talks_2.png"
-                      title="view agenda"
-                    />
+                    <img src="images/past_talks_2.png" title="view agenda" />
                   </div>
                   <div class="info-block__caption">
                     <h2 class="black-bold margin-top-10">
@@ -1932,36 +1965,25 @@
       <section class="s-images" data-onscreen="" id="images">
         <div class="s-images__container">
           <div class="s-images__items">
-            <div
-              class="s-images__item"
-            >
+            <div class="s-images__item">
               <img
                 src="images/event_1.jpeg"
                 alt="Sunil Bhardwaj &amp; Montse Guardia"
               />
             </div>
 
-            <div
-              class="s-images__item"
-            >
-              <img
-                src="images/event_2.jpg"
-                alt="Team"
-              />
+            <div class="s-images__item">
+              <img src="images/event_2.jpg" alt="Team" />
             </div>
 
-            <div
-              class="s-images__item"
-            >
+            <div class="s-images__item">
               <img
                 src="images/event_3.jpg"
                 alt="Startup Grind Barcelona Tech Conference 2018"
               />
             </div>
 
-            <div
-              class="s-images__item"
-            >
+            <div class="s-images__item">
               <img
                 src="images/event_4.jpg"
                 alt="Startup Grind Barcelona Tech Conference 2018"
@@ -2104,7 +2126,7 @@
         </div>
       </div>
     </footer>
-    <section class="s-cookies s-cookies-show">
+    <section class="s-cookies s-cookies-show" data-controller="cookies">
       <div class="s-cookies__container">
         <div class="s-cookies__icon"></div>
         <div class="s-cookies__message">
@@ -2114,11 +2136,21 @@
           this <a href="/privacy#cookies" title="Privacy Policy">link</a>.
         </div>
         <div class="s-cookies__understood">
-          <button class="s-cookies__btn" title="Understood" id="acceptCookies">
+          <button
+            class="s-cookies__btn"
+            title="Understood"
+            id="acceptCookies"
+            data-action="cookies#accept"
+          >
             Understood
           </button>
         </div>
       </div>
     </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
