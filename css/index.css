@@ -334,9 +334,9 @@ small,
   height: 5px;
   content: "";
   background-color: currentColor;
-  transition: -webkit-transform 0.3s ease-out 0.2s;
-  transition: transform 0.3s ease-out 0.2s;
-  transition: transform 0.3s ease-out 0.2s, -webkit-transform 0.3s ease-out 0.2s;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 .icon-hamburger::before {
@@ -353,7 +353,7 @@ small,
 
 body.is-menu-open .icon-hamburger {
   background-color: transparent;
-  transition-delay: 0.2s;
+  /* transition-delay: 0.2s; */
 }
 
 body.is-menu-open .icon-hamburger::before {
@@ -1370,12 +1370,6 @@ body.is-menu-open .icon-hamburger::after {
 .s-faq__item:hover:not(.is-open)::before {
   background-color: #000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23fff' fill-rule='nonzero' d='M5.577 13C5.258 13 5 12.776 5 12.5s.258-.5.577-.5h13.846c.319 0 .577.224.577.5s-.258.5-.577.5H5.577z'/%3E%3Cpath fill='%23fff' fill-rule='nonzero' d='M13 19.423c0 .319-.224.577-.5.577s-.5-.258-.5-.577V5.577c0-.319.224-.577.5-.577s.5.258.5.577v13.846z'/%3E%3Cpath stroke='%236C757D' d='M.5.5h24v24H.5z'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-.s-faq__collapsable {
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
 }
 
 .s-faq__content *:last-child {
